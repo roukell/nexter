@@ -15,6 +15,18 @@ body {
   font-weight: 300;
   line-height: 1.6; }
 
+.sidebar {
+  background-color: #c69963; }
+
+.header {
+  background-color: #B28451; }
+
+.realtors {
+  background-color: #101d2c; }
+
+.features {
+  background-color: #aaa; }
+
 .story__pictures {
   background-color: #c69963; }
 
