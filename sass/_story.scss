@@ -8,7 +8,18 @@
     background-color: $color-grey-light-1;
     grid-column: col-start 5 / full-end;
 
-    padding: 6rem 12rem;
+    padding: 6rem 8vw; //using v
+
+    //method 1 flex is good for 1D layout
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: flex-start;
+
+    //method 2 but grid works too!
+    display: grid;
+    align-content: center;
+    justify-items: start;
   }
 
   &__text {
