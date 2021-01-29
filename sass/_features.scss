@@ -3,25 +3,37 @@
 
   margin: 15rem 0;
 
-  display: grid;
-  // grid-template-columns: repeat(3, 1fr);
-  //auto-fit and minmax will make the table responsive without media query
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 6rem;
+  @supports (display: grid) {
+    display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    //auto-fit and minmax will make the table responsive without media query
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 6rem;
 
-  //this reduces the map and key feature gap and move the whole grid cells up the axis
-  //hance fixed the bigger gap problem
-  align-items: start;
+    //this reduces the map and key feature gap and move the whole grid cells up the axis
+    //hance fixed the bigger gap problem
+    align-items: start;
+  }
 }
 
 .feature {
+  //fallback plan if browser doesnt support Grid
+  float: left;
+  width: 33.333%;
+  margin-bottom: 6rem;
+
+  @supports(display: grid) { //float is ignored
+    width: auto;
+    margin-bottom: 0;
+  }
+
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-row-gap: 1.5rem;
   grid-column-gap: 2.5rem;
 
   &__icon {
-    fill:$color-primary;
+    fill: $color-primary;
     width: 4.5rem;
     height: 4.5rem;
     // icon spans will the way to bottom of column -1 is the last explicit grid
