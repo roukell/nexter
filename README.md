@@ -1,12 +1,12 @@
 # Nexter
 ## Description
-  Nexter is one of the study projects in Jonas Schmedtmann's Advanced CSS and Sass course. 
+  Nexter is one of the study projects in Jonas Schmedtmann's Advanced CSS and Sass course.
   The main focus of the project is to master Grid.
-  It is gradually built throughout the class. 
+  It is gradually built throughout the class.
 
   ## Deployed application
-  
-  
+  https://roukell.github.io/nexter/
+
   ## Technologies used
   HTML, CSS, Sass
 
@@ -22,15 +22,15 @@
       npm i
 
   ## Usage
-  To run development:  
+  To run development:
 
       npm run start
 
 
-  To run build:  
+  To run build:
 
       npm run build:css
-      
+
   ## Contributing
   Designed by Jonas Schmedtmann
 
